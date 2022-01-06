@@ -17,18 +17,37 @@
         <img id="header-img"
              src="resources/images/logo.svg"
              class="header__logo"
-             alt="A company logo"><p class="header__title">Company</p>
+             alt="A company logo">
+        <p class="header__title">Company</p>
         <nav id="nav-bar"
              class="navigator">
-            <a href="#" class="navigator__link">Features</a>
-            <a href="#" class="navigator__link">How it works</a>
-            <a href="#" class="navigator__link">Pricing</a>
+            <a href="#"
+               class="navigator__link">Features</a>|
+            <a href="#"
+               class="navigator__link">How it works</a>|
+            <a href="#"
+               class="navigator__link">Pricing</a>
         </nav>
     </header>
     <section class="opening opening--shadow">
         <div class="opening__background"></div>
         <h1 class="opening__heading">Buy best groceries.</h1>
         <h2 class="opening__heading opening__heading--small">Fresh stock available.</h1>
+            <form id="form"
+                  method="post"
+                  action="https://www.freecodecamp.com/email-submit">
+                <input title="Enter your email to buy groceries"
+                       placeholder="Enter your email"
+                       type="email"
+                       id="email"
+                       class="email-field"
+                       required>
+                <button id="submit"
+                        type="submit"
+                        class="btn btn--black"
+                        value="submit"
+                        title="Subscribe to this groceries website with your email">Start</button>
+            </form>
     </section>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
