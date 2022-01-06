@@ -1,16 +1,22 @@
 :root {
     --basic-shadow: 0px 0px 4px 0px gray;
-    --navigator-height: 50px;
-    --navigator-margin: 1em;
+    --navigator--height: 50px;
+    --navigator--margin: 1em;
+    --navigator__link--margin: 1em;
 }
 
 body {
     margin: 0px;
+    height: 9999px;
 }
 
 .header {
-    height: var(--navigator-height, 100px);
+    height: var(--navigator--height, 100px);
     display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: white;
 }
 
 .header--shadow {
@@ -24,7 +30,7 @@ body {
 .header__title {
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: var(--navigator-margin, 100px);
+    margin: var(--navigator--margin, 100px);
     line-height: 100%;
 }
 
@@ -38,11 +44,51 @@ body {
 .navigator__link {
     color: black;
     text-transform: capitalize;
-    margin: var(--navigator-margin, 2em);
+    margin: var(--navigator__link--margin, 0 1em);
     text-decoration: none;
     transition: all 100ms ease-in-out;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .navigator__link:hover {
     font-size: 1.05em;
+}
+
+.opening {
+    margin-top: var(--navigator--height, 50px);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.opening__background {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    z-index: -1;
+    background: rgb(0,0,0);
+    background: linear-gradient(0.25turn, rgba(135, 18, 245, .7), rgba(135, 18, 245, 0.2)), url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/110303_CNPP_LSC_0218_%2813065103155%29.jpg/1024px-110303_CNPP_LSC_0218_%2813065103155%29.jpg");
+}
+
+.opening__heading {
+    font-size: 4em;
+    color: rgba(255,255,255,0.9);
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.opening__heading--small {
+    font-size: 1em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.opening--shadow {
+    box-shadow: var(--basic-shadow, 0px 0px 4px 0px black);
 }
