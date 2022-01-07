@@ -3,6 +3,7 @@
     --navigator--height: 50px;
     --navigator--margin: 1em;
     --navigator__link--margin: 1em;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -126,7 +127,7 @@ body {
 }
 
 .article-heading {
-    margin-top: calc(100vh - var(--navigator--height, 100px));
+    padding-top: calc((100vh - var(--navigator--height, 100px))/ 20);
     text-align: center;
-    font-size: 2em;
+    font-size: 3em;
 }
