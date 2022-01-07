@@ -24,8 +24,10 @@ body {
 }
 
 .header__logo {
-    height: 100%;
+    padding: 4px;
+    filter: hue-rotate(80deg);
 }
+
 
 .header__title {
     font-weight: bold;
@@ -121,4 +123,10 @@ body {
 
 .btn--black:hover {
     background-color: rgba(0,0,0,1);
+}
+
+.article-heading {
+    margin-top: calc(100vh - var(--navigator--height, 100px));
+    text-align: center;
+    font-size: 2em;
 }
