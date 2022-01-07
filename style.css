@@ -1,5 +1,5 @@
 :root {
-    --basic-shadow: 0px 0px 4px 0px gray;
+    --basic-shadow: 0px 2px 4px 1px rgba(0,0,0,.3);
     --navigator--height: 50px;
     --navigator--margin: 1em;
     --navigator__link--margin: 1em;
@@ -111,6 +111,8 @@ body {
     cursor: pointer;
     font-size: 2em;
     transition: all 100ms ease-in-out;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 .btn:hover {
@@ -130,4 +132,25 @@ body {
     padding-top: calc((100vh - var(--navigator--height, 100px))/ 20);
     text-align: center;
     font-size: 3em;
+}
+
+.features-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.features-list__item {
+    box-shadow: var(--basic-shadow);
+    padding: 2em;
+    width: 25vw;
+}
+
+.features-list__item__feature {
+    font-size: 2em;
+    text-align: center;
+}
+
+.features-list__item__explanation {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
 }
