@@ -8,7 +8,6 @@
 
 body {
     margin: 0px;
-    height: 9999px;
 }
 
 .header {
@@ -123,8 +122,19 @@ body {
     color: white;
 }
 
+
 .btn--black:hover {
     background-color: rgba(0,0,0,1);
+}
+
+.btn--purple {
+    background-color: rgba(135,18,245,0.6);
+    color: white;
+}
+
+.btn--purple:hover {
+    background-color: rgba(135,18,245,0.8);
+    color: white;
 }
 
 .article-heading {
@@ -168,4 +178,53 @@ body {
     margin: auto;
     display: block;
     box-shadow: var(--basic-shadow);
+}
+
+.pricing-list {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+}
+
+.pricing-list__item {
+    box-shadow: var(--basic-shadow);
+    padding: 2em;
+    margin: 1em;
+    width: 100%;
+}
+
+.pricing-list__item__plan {
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.pricing-list__item--basic {
+    border-bottom: 10px solid transparent;
+    border-image-source: linear-gradient(0.25turn, rgba(0,0,0, 0.8), rgba(0,0,0, 0.3));
+    border-image-slice: 1;
+}
+
+.pricing-list__item--premium {
+    border-bottom: 10px solid transparent;
+    border-image-source: linear-gradient(0.25turn, rgba(255, 196, 0, 0.8), rgba(255,196,0, 0.3));
+    border-image-slice: 1;
+}
+
+.pricing-list__item--vip {
+    border: 10px solid transparent;
+    border-image-source: linear-gradient(0.25turn, rgba(230, 255, 0, 1), rgba(230,255,0, 0.3));
+    border-image-slice: 1;
+}
+
+.pricing-list__item__explanation {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.order-item {
+    width: 100%;
+    text-align: center;
 }
