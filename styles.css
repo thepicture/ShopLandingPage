@@ -8,6 +8,7 @@
 
 body {
     margin: 0px;
+    overflow: hidden auto;
 }
 
 .header {
@@ -135,6 +136,12 @@ body {
         height: 4em;
     }
 
+    .email-field::placeholder {
+        white-space: pre-line;
+        position: relative;
+        text-align: center;
+    }
+
     .btn {
         margin-bottom: .5em;
     }
@@ -220,15 +227,6 @@ body {
     }
 }
 
-@media screen and (max-width: 400px) {
-    .features-list__item {
-        border-bottom: 10px solid transparent;
-        border-top: 10px solid transparent;
-        width: 100vw;
-    }
-}
-
-
 .features-list__item__feature {
     font-size: 2em;
     text-align: center;
@@ -312,8 +310,9 @@ body {
     text-align: center;
 }
 @media screen and (max-width: 400px) {
-    .pricing-list__item {
-        width: 100%;
+
+    .pricing-list__item__plan {
+        font-size: 1.5em;
     }
 }
 
