@@ -291,8 +291,14 @@ body {
 
 .pricing-list__item--vip {
     border: 10px solid transparent;
-    border-image-source: linear-gradient(0.25turn, rgba(230, 255, 0, 1), rgba(230,255,0, 0.3));
+    border-image-source: linear-gradient(0.25turn, rgba(230, 255, 0, 1), rgb(254, 255, 221));
     border-image-slice: 1;
+    background: linear-gradient(45deg, red, blue);
+    color: white;
+}
+
+.pricing-list__item--vip button {
+    background: rgba(255,255,255,1);
 }
 
 .pricing-list__item__explanation {
